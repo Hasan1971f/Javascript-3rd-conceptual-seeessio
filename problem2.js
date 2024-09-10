@@ -18,5 +18,18 @@ const person = {
 }
 // valid object er result er jonno
 // const x = showInfo("hello")
-const x = showInfo(person)
-console.log(x)
+// const x = showInfo(person)
+// console.log(x)
+
+
+
+// hasan@sirajgonj.com
+
+function creatEmail(info) {
+    if(typeof info !== "object"){
+        return "invalid object"
+    }
+    const result = info.name+"@"+info.address+".com"
+    return result
+}
+console.log(creatEmail(person))
